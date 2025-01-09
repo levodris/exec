@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual seu país?</title>
+    <style>
+        body {
+            font: normal 16pt Arial;
+            
+        }
+        div#res {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual seu país?</h1>
+    <input type="text" id="txt1">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="res">Resultado...</div>
+    <script>
+        function clicar(){
+
+        let pais = window.document.querySelector('input#txt1').value//o .value eu usei pra pegar o valor digitado pelo usuario
+        let res = window.document.querySelector('div#res')
+        
+    if(pais === 'Brasil') {
+
+            res.innerHTML = `Você é brasileiro!`
+
+    } else {
+
+            res.innerHTML = `Você é estrangeiro!`
+
+    }
+}
+    </script>
+    
+    
+</body>
+</html>

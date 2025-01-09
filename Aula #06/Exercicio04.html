@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nao</title>
+    <style>
+        body  {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let nome = window.prompt('Qual é seu nome?')
+        document.write(`Olá, <strong>${nome}!</strong> Seu nome tem ${nome.length} letras</br>`)
+        document.write(`Seu nome em maiúsculas é <strong>${nome.toUpperCase()}</strong></br>`)//a <Strong></Strong> nestes comandos servem para deixar as letras em negrito
+        document.write(`Seu nome em minúsculas é <strong>${nome.toLocaleLowerCase()}</strong>`)//toUpperCase deixa as letras maiusculas, toLowerCase deixa as letras minusculas
+    </script>
+</body>
+</html>

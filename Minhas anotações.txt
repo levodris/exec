@@ -1,0 +1,470 @@
+
+ANOTAÇÕES DA AULA #04
+
+
+o comando <style></style> ficara dentro da tag <head></head>
+
+o comando <script></script> ficara por ultimo dentro da tag <body></body>
+         window.alert('') é um comando usado para emitir um alerta, ou pode ser usado somente como alert('')
+         window.confirm('') este comando faz uma janela interativa com as opções sim ou cancelar
+         window.prompt('') está é outra janela que interage com o cliente de uma forma de escrita
+
+______________________________________________________________________________________________________________________________________
+
+ANOTAÇÕES DA AULA #05
+
+
+// é usado para adicionar um comentario em uma unica linha
+
+e /* */ é usado pra fazer um comentario em mais de uma linha
+
+quando tem só um sinal de igual (=) se fala recebe
+
+
+e nao guanabara, nao tem como colocar um carro em uma vaga que ja tem um carro😪😓   
+
+
+para anular uma vaga (var), voce pode atribuir NULL ao seu comando assim essa "vaga" nao vai receber nada
+
+primeiros tipos de dados que eu estou aprendendo
+
+number
+string
+boolean
+
+________________________________________________________________________________________________________________________________________
+
+ANOTAÇÕES DA AULA #06
+
+
+o sinal unico de + é usado para concatenação
+
+para fazer uma conversão de string para number, é usado o comando Number.parseInt(n), ou somente parseInt(n)
+
+e para um numero com virgula é usado o comando Number.parseFloat(n)
+
+parseInt usado para numeros inteiros
+e parseFloat usado para numeros quebrados
+
+tambem pode ser usado somente Number(n), que é uma forma mais simplificada, o number consegue identificar se o seu numero vai ser inteiro ou quebrado
+
+
+eu posso tambem converter um number para string, usando os codigos
+
+String(n)
+
+ou eu começo o codigo com a let que eu quero converter, por exemplo   n.toString()
+
+'
+para fazer uma frase com concatenação de uma forma mais facil voce pode usar ´${}´, por exemplo:
+
+window.alert(´O aluno ${nome} com ${idade} anos tirou a nota ${nota}´)
+
+
+s.lenght me diz quantos caracteres a string tem, nao tem () por ser um atributo
+
+s.toUpperCase()	todas letras viram MAIUSCULAS
+
+s.toLowerCase() todas letras viram MINUSCULAS
+
+In no final de um codigo é usado para quebrar linhas, para separar as linhas
+
+</br> no final do codigo faz com que o texto pule pra linha de baixo, por exemplo:
+
+
+ document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras</br>`)
+ document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}`)
+
+o resultado disso é: Olá, levi! Seu nome tem 4 letras
+                     Seu nome em maiúsculas é LEVI 
+
+
+
+______________________________________________________________________________________________________________________________________
+
+
+
+ANOTAÇÕES DA AULA #07
+
+
+Tipos de operadores:  
+
+Aritiméticos:
+
++   : soma 2+2:4
+
+-  : subtração 5-2 :3
+
+* : multiplicação 5*2 :10
+
+/ : divisão 5/2 = 2.5
+
+% : resto de divisão 5%2 :1 (5/2) 
+
+** : elevado ao quadrado 5** 2 :5
+
+
+
+Ordem de Precedência:
+
+Ordem de precedência dos  Operadores Aritiméticos!!!!!!!!!!
+         
+         
+         Ordem de Precedência:
+
+         ()
+
+         **
+
+         * / %
+
+         + -
+
+
+
+         Operadores de Incremento:
+
+         var x = 5
+
+         x = x + 1     |     x ++(simplificado)
+                       |
+         x = x - 1     |     x --(simplificado)
+
+                                 
+    
+
+
+______________________________________________________________________________________________________________________________________
+
+
+ANOTAÇÕES DA AULA #08
+
+Operadores relacionais
+
+> verifica se o numero é maior que o outro, por exemplo: 5 > 2 = true, o resultado é true porque 5 é maior que 2
+
+ < verifica se o numero é menor que o outro, funciona da mesma forma do ">", por exemplo 5 < 2 = false, o resultado é false pelo fato do 5 nao ser menor do que 2
+
+  >= verifica se o numero é maior ou igual que o outro, por exemplo: 5 >= 5 = true, o resultado é true pois os numeros se igualam
+
+   <= verifica se o numero é menor ou igual que o outro, funciona da mesma forma do ">=", por exemplo 5<= 6, true, o resultado da true pelo fato do 5 ser menor do que 6
+
+    == ta obvio isso porra
+
+     != verifica se o numero é diferente um do outro, por exemplo: 2 != 2 = false, o resultado é false porque os numeros nao sao diferentes
+
+
+
+     Operadores de Identidade
+
+ === verifica se os numeros são identicos da quantidade e do tipo, por exemplo 5 === '5' = false, o resultado é false por conta dos tipos dos numeros,
+  o 5 é um number e o '5' é uma string, e esses sinais de === verificam o tipo do numero
+
+  !== verifica se os numeros são diferentes na quantidade e no tipo, por exemplo 5 !== '5' = false, o resultado é false porque eles são
+  de tipos diferentes
+
+
+
+Operadores Lógicos
+
+! o operador inverte os valores booleanos, entao se o operador é false resulta em true, e se for true resulta em false
+
+$$ é um operador que só da o resultado true se tiver dois resultados true, por exemplo: (voce quer tirar a habilidação? = true, voce tem mais de 18 anos? = false) = false, o resultado
+ deu false pq o operador nao teve as duas respostas em true
+
+|| ao contrario do $$, o resultado ira dar true mesmo se tiver só uma resposta true, por exemplo: false + true = true, false + false = false
+
+
+Operador Ternario
+
+esse operador funciona da seguinte maneira
+
+var media = 7
+
+media >= 7? "aprovado":"reprovado", a média é maior ou igual a 7? se sim, voce foi aprovado, se nao for, voce é reprovado, neste caso o resultado é "aprovado"
+
+var media = 5
+
+media >= 7? "aprovado":"reprovado", neste caso o resultado será "reprovado" pela média ter sido menor do que o preciso
+
+o Operador Termario é sempre o ultimo da fila de precedência
+
+
+
+______________________________________________________________________________________________________________________________________
+
+
+
+ANOTAÇÕES DA AULA #09
+
+
+O que é DOM?
+
+DOM nada mais é do que a sigla,
+      
+D document  
+O object
+M model
+
+Um modelo de objectos para documentos.
+
+
+
+Ilustração de uma árvore DOM:
+
+                     window
+
+              /        |        \
+
+           location document history
+
+                       |
+
+                      html
+
+                      /   \
+
+                 head      body 
+
+             /  |         /  |  |  \
+
+          meta   title    h1 p p div
+
+                                |
+
+                              strong
+
+
+
+Parent (pai)  - é quem está ACIMA na árvore HIERARQUICA.
+
+Child (filho) - é quem está ABAIXO na árvore HIERARQUICA.
+
+É como se fosse uma árvore genealógica. Exemplos:
+
+HEAD e BODY são FILHOS de HTML;
+
+HTML é PAI de HEAD e BODY;
+
+HTML é FILHO de DOCUMENT.
+
+
+
+É importante ressaltar que: um DOCUMENTO HTML e sua REPRESENTAÇÃO DOM são a MESMA COISA. A única diferença é que estes estão REPRESENTADOS de FORMAS DIFERENTES. Ex:
+
+("uma garrafa") e ("a bottle") são a MESMA COISA, só que representadas em línguas diferentes. É a mesma ideia.
+
+Caso você altere o DOCUMENTO HTML você também alterará o seu DOM e vice-versa.
+
+____________________________
+
+
+
+    Como ACESSAR/SELECIONAR ELEMENTOS através do DOM:
+
+  Lista de 5 MÉTODOS de acesso:
+
+by Tag         - getElementsByTagName("")
+
+by ID            - getElementByID("")
+
+by Name     - getElementsByName("")
+
+by Class      - getElementsByClassName("")
+
+by Selector - querySelector (""); querySelectorAll ("");
+
+
+
+O método getElementsByTagName() SELECIONA ELEMENTOS via TAG.
+
+O método getElementById() SELECIONA UM ELEMENTO via ID.
+
+O método getElementsByName() SELECIONA ELEMENTOS via NOME.
+
+O método getElementsByClassName("") SELECIONA ELEMENTOS via CLASSE.
+
+O método querySelector() SELECIONA UM ELEMENTO via SELETOR CSS.
+
+O método queySelectorAll() SELECIONA ELEMENTOS via SELETOR CSS.
+
+
+
+*Atente-se que alguns dos seletores estão no SINGULAR e outros no PLURAL (Element e Element*S*)
+
+Caso utilize um seletor que está no PLURAL, para ESPECIFICAR qual TAG, NAME ou CLASS você deseja ACESSAR, você têm que usar, após os parênteses (), os colchetes [] e, dentro destes, você indicará qual a POSIÇÃO do elemento que você deseja ACESSAR.
+
+Ex da aula:
+
+document.getElementsByTagName('p')[1];
+
+Neste exemplo selecionou-se, dentro dos parênteses, todas as tags <p>. E, dentro dos colchetes, selecionou-se a tag <p> que se encontra na 1° POSIÇÃO, ou seja, a 2° tag <p>.
+
+*Lembrando que a contagem começa em 0. Portanto:
+
+a posição 0 é a 1° tag <p>
+
+a posição 1 é a 2° tag <p>
+
+a posição 2 é a 3° tag <p> ...
+
+
+
+____________________________
+
+
+
+  Diferença entre  .innerText  e  .innerHTML  :
+
+
+
+A propriedade  .innerText  serve para DEFINIR ou RETORNAR o CONTEÚDO de TEXTO de um ELEMENTO.
+
+
+
+A propriedade  .innerHTML  serve para DEFINIR ou RETORNAR o CONTEÚDO HTML (texto+formatação) de um ELEMENTO.
+
+
+
+ILUSTRAÇÃO (crie um outro documento, monte a estrutura básica HTML5 (!+enter) e insira este código dentro do body):
+
+
+
+<body>
+
+    <h1>Diferença entre innerText e InnerHTML:</h1>
+
+    <p class="teste_1"></p>
+
+    <p id="teste_2"></p>
+
+    <script>
+
+        var variavel_1 = document.querySelector('.teste_1')
+
+        variavel_1.innerText = "Teste do <strong>innerText</strong>"
+
+
+
+        var variavel_2 = document.querySelector('#teste_2')
+
+        variavel_2.innerHTML = "Teste do <strong>innerHTML</strong>"
+
+    </script>
+
+</body>
+
+
+
+_____________________
+
+
+
+  ALGUMAS DEFINIÇÕES:
+
+
+
+*Um OBJETO no JS é um CONTAINER de PROPRIEDADES e MÉTODOS.
+
+
+
+*Uma FUNÇÃO no JS é um subprograma que pode receber PARÂMETROS e RETORNAR um resultado. São AÇÕES executadas assim que são CHAMADAS ou em decorrência de algum EVENTO. É um bloco de códigos projetado para executar uma tarefa ou calcular um valor.
+
+
+
+*Um MÉTODO no JS é uma FUNÇÃO que está armazenada na forma de um CONJUNTO DE PROPRIEDADES dentro de um OBJETO. Ou seja, MÉTODOS são AÇÕES que podem ser performadas em OBJETOS.
+
+
+
+*Um EVENTO no JS é uma CONDIÇÃO que, quando verdadeira, fará a CHAMADA de uma FUNÇÃO.
+
+
+
+*O Seletor de Classe é representado por:  .
+
+*O Seletor de ID é representado por:  #
+
+
+
+________________________________________________________________________________________________________________________________________
+
+
+ANOTAÇÕES DA AULA #10
+
+
+{
+  isso é um bloco😯
+}
+
+
+________________________________________________________________________________________________________________________________________
+
+
+
+ANOTAÇÕES DA AULA #11
+
+
+Condições 
+
+
+if (condição), essa é uma condição, e nela eu tenho duas possibilidades, a "esquerda" e a "direita", chamadas de if, e else, exemplos:
+
+
+if (condição){
+      
+      esse bloco, ira funcionar caso a (condição) dessa if der true
+      
+}else{
+
+      e esse bloco ira funcionar caso a (condição) der false
+
+}  e nestes blocos eu posso colocar varios comandos
+
+
+                        Tipos de Condições              
+                                |
+if (condição){                  |if (condição){
+                                |
+true                            |true
+                                | 
+}                               |}else{
+                                |
+CONDIÇÃO SIMPLES                | false
+                                |
+nessa aqui, se a condição for   |}
+false, nada em especial vai     | essa aqui diferente da CONDIÇÃO SIMPLES, se a condição for true, o codigo faz uma coisa, e caso for false, ele ira fazer outra coisa
+acontecer                       |
+
+
+
+Para escrever mensagens no console com javascript, se usa o comando console.log('')
+
+
+
+
+
+______________________________________________________________________________________________________________________________________
+
+
+
+ANOTAÇÕES DA AULA #12
+
+
+
+condição multipla 
+
+
+switch(expressao){
+
+case valor 1:
+break
+case valor 2:
+break
+case valor 3:
+break
+default:
+break
+}
+
+usar o break no switch é obrigatorio
+
